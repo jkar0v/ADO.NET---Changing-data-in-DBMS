@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F882EE3-DEED-4019-8B27-04D1A7A9792A}</ProjectGuid>
+    <ProjectGuid>{D4D169D5-5606-40FF-BBC4-C9D5B20AEF33}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Library</RootNamespace>
-    <AssemblyName>Library</AssemblyName>
+    <RootNamespace>UniversityDB</RootNamespace>
+    <AssemblyName>UniversityDB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,17 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DatabaseHelper.cs" />
-    <Compile Include="LibraryDB.cs">
+    <Compile Include="Course.cs" />
+    <Compile Include="CourseRepository.cs" />
+    <Compile Include="CourseService.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="StudentRepository.cs" />
+    <Compile Include="StudentService.cs" />
+    <Compile Include="UniversityDB.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LibraryDB.Designer.cs">
-      <DependentUpon>LibraryDB.cs</DependentUpon>
+    <Compile Include="UniversityDB.Designer.cs">
+      <DependentUpon>UniversityDB.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LibraryDB.resx">
-      <DependentUpon>LibraryDB.cs</DependentUpon>
+    <EmbeddedResource Include="UniversityDB.resx">
+      <DependentUpon>UniversityDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

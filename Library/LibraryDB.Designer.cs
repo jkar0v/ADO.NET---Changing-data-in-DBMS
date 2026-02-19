@@ -1,6 +1,6 @@
 ﻿namespace Library
 {
-    partial class Form1
+    partial class LibraryDB
     {
         /// <summary>
         /// Required designer variable.

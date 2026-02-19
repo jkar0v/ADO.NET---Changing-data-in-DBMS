@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Library
 {
-    public partial class Form1 : Form
+    public partial class LibraryDB : Form
     {
         DatabaseHelper dbHelper = new DatabaseHelper();
-        public Form1()
+        public LibraryDB()
         {
             InitializeComponent();
         }
@@ -31,6 +31,8 @@ namespace Library
             textBox1.Clear();
             textBox2.Clear();
             textBox3.Clear();
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
